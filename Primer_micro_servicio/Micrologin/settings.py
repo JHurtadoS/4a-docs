@@ -62,6 +62,7 @@ SIMPLE_JWT = {
     'USER_ID_CLAIM': 'user_id',
 }
 
+AUTH_USER_MODEL = 'MicroLoginApp.User'
 
 ROOT_URLCONF = 'Micrologin.urls'
 
