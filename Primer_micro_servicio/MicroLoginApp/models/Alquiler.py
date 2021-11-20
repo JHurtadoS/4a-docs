@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser,PermissionsMixin,BaseUserManager
-from models import Cliente
-from models import Propiedad
+from MicroLoginApp.models import Cliente
+from MicroLoginApp.models import Propiedad
 
 class Alquiler(PermissionsMixin):
     id = models.BigAutoField(primary_key=True)

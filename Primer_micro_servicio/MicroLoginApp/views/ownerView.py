@@ -4,7 +4,7 @@ from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 
 from MicroLoginApp.serializers.serializerCliente import SerializerUser
 
-class ClienteCreateView(views.APIView):
+class OwnerCreateView(views.APIView):
     def post(self, request, *args, **kwargs):
         serializer = SerializerUser(data=request.data)
         serializer.is_valid(raise_exception=-True)
