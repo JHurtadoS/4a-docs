@@ -1,0 +1,37 @@
+------AlquilerRepository-------
+package com.misiontic.reserva_ms.repositories;
+
+import com.misiontic.reserva_ms.models.Alquiler;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface AlquilerRepository extends MongoRepository <Alquiler, String> { }
+
+
+
+------ClienteRepository--------
+package com.misiontic.reserva_ms.repositories;
+
+import com.misiontic.reserva_ms.models.Cliente;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface ClienteRepository extends MongoRepository <Cliente, String> { }
+
+
+
+-------DueñoRepository---------
+package com.misiontic.reserva_ms.repositories;
+
+import com.misiontic.reserva_ms.models.Dueño;
+import org.springframework.data.mongodb.repository.MongoRepository;
+public interface DueñoRepository  extends MongoRepository <Dueño, String> {}
+
+
+
+
+-----PropiedadRepository-------
+package com.misiontic.reserva_ms.repositories;
+
+import com.misiontic.reserva_ms.models.Propiedad;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface PropiedadRepository extends MongoRepository <Propiedad, String> { }
