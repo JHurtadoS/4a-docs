@@ -1,0 +1,240 @@
+----------------------------Modelos-----------------------------------
+
+--Alquiler--
+
+package com.misiontic.reserva_ms.models;
+
+import org.springframework.data.annotation.Id;
+import java.util.Date;
+
+public class Alquiler {
+    @Id
+    ///id cleinte
+    ///codigo propieda
+    private Date llegada;
+    private Date salida;
+    private String estado;
+    private Float dinero_abonado;
+
+    public Alquiler(Date llegada, Date salida,String estado,Float dinero_abonado) {
+        this.llegada = llegada;
+        this.salida = salida;
+        this.estado = estado;
+        this.dinero_abonado = dinero_abonado;
+    }
+
+    public Date getLlegada() {
+        return llegada;
+    }
+    public void setLlegada(Date llegada) {
+        this.llegada = llegada;
+    }
+
+    public Date getSalida() {
+        return salida;
+    }
+    public void setSalida(Date salida) {
+        this.salida = salida;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
+    public Float getDinero_abonado() {
+        return dinero_abonado;
+    }
+    public void setDinero_abonado(Float dinero_abonado) {
+        this.dinero_abonado = dinero_abonado;
+    }
+
+}
+
+
+--Propiedad--
+
+package com.misiontic.reserva_ms.models;
+
+import org.springframework.data.annotation.Id;
+import java.util.Date;
+
+public class Propiedad {
+    @Id
+    ///private iddueño;
+    private String dirección;
+    private String código;
+    private String descripción;
+    private Integer precio;
+
+    public Propiedad(String dirección, String código, String descripción, Integer precio) {
+        this.dirección = dirección;
+        this.código = código;
+        this.descripción = descripción;
+        this.precio = precio;
+    }
+
+    public String getDirección () {
+        return dirección;
+    }
+
+    public void setDirección (String dirección) {
+        this.dirección = dirección;
+    }
+
+    public String getCódigo () {
+        return código;
+    }
+
+    public void setCódigo (String código) {
+        this.código = código;
+    }
+
+    public String getDescripción () {
+        return descripción;
+    }
+
+    public void setDescripción (String descripción) {
+        this.descripción = descripción;
+    }
+
+    public Integer getPrecio () {
+        return precio;
+    }
+
+    public void setPrecio (Integer precio) {
+        this.precio = precio;
+    }
+}
+
+
+--Cliente--
+
+package com.misiontic.reserva_ms.models;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.aggregation.ArithmeticOperators;
+
+import java.util.Date;
+
+public class Cliente {
+    @Id
+    private String nombre;
+    private String apellido;
+    private Integer cédula;
+    private Integer teléfono;
+    private Float dinero_abonado;
+
+    public Cliente(String nombre,String apellido, Integer cédula, Integer teléfono, Float dinero_abonado) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.cédula = cédula;
+        this.teléfono = teléfono;
+        this.dinero_abonado = dinero_abonado;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public Integer getCédula() {
+        return cédula;
+    }
+    public void setCédula(Integer cédula) {
+        this.cédula = cédula;
+    }
+
+    public Integer getTeléfono() {
+        return teléfono;
+    }
+    public void setTeléfono(Integer teléfono) {
+        this.teléfono = teléfono;
+    }
+
+    public Float getDinero_abonado() {
+        return dinero_abonado;
+    }
+    public void setDinero_abonado(Float dinero_abonado) {
+        this.dinero_abonado = dinero_abonado;
+    }
+}
+
+
+--Dueño--
+
+package com.misiontic.reserva_ms.models;
+
+import org.springframework.data.annotation.Id;
+import java.util.Date;
+
+public class Dueño {
+    @Id
+    private String nombre;
+    private String apellido;
+    private String teléfono;
+    private String email;
+    private Float dinero_actual;
+    ////private String codigopropiedad;
+
+    public Dueño(String nombre, String apellido, String teléfono, String email, Float dinero_actual) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.teléfono = teléfono;
+        this.email = email;
+        this.dinero_actual = dinero_actual;
+
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public String getTeléfono() {
+        return teléfono;
+    }
+    public void setTeléfono(String teléfono) {
+        this.teléfono = teléfono;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public Float getDinero_actual() {
+        return dinero_actual;
+    }
+    public void setDinero_actual(Float dinero_actual) {
+        this.dinero_actual = dinero_actual;
+    }
+    ///public String get() {
+       /// return nombre;
+    ///}
+    ////public void setNombre(String nombre) {
+        ///this.nombre = nombre;
+    //}
+}
