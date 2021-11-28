@@ -6,5 +6,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import java.util.List;
 
 public interface AlquilerRepository extends MongoRepository <Alquiler, String> {
-        List<Alquiler> findByIDdueño (String IDdueño);
+        List<Alquiler> findByIDPropiedad (String NombrePropiedad);
+        List<Alquiler> findByNombreCliente (String nombreCliente);
+
 }

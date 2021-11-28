@@ -5,7 +5,7 @@ import java.util.Date;
 public class Alquiler {
     @Id
     private int id;
-    private String nombreDueño;
+    private int NombrePropiedad;
     private String nombreCliente;
     private Date llegada;
     private Date salida;
@@ -13,20 +13,22 @@ public class Alquiler {
     private String estado;
     private Float dinero_abonado;
 
-    public Alquiler(int id, Date llegada, Date salida, String estado, Float dinero_abonado) {
+    public Alquiler(int id, int idPropiedad, String nombreCliente, Date llegada, Date salida, String estado, Float dinero_abonado) {
         this.id = id;
+        this.NombrePropiedad = NombrePropiedad;
+        this.nombreCliente = nombreCliente;
         this.llegada = llegada;
         this.salida = salida;
         this.estado = estado;
         this.dinero_abonado = dinero_abonado;
     }
 
-    public String getNombreDueño() {
-        return nombreDueño;
+    public int getNombrePropiedad() {
+        return NombrePropiedad;
     }
 
-    public void setNombreDueño(String nombreDueño) {
-        this.nombreDueño = nombreDueño;
+    public void setNombrePropiedad(int NombrePropiedad) {
+        this.NombrePropiedad = NombrePropiedad;
     }
 
     public String getNombreCliente() {
