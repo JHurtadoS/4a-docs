@@ -1,1 +1,0 @@
-spring.data.mongodb.uri=${URL_DB:mongodb+srv://Grupo2:12345@microserviciodb.o7fab.mongodb.net/MicroservicioDB?retryWrites=true&w=majority}
