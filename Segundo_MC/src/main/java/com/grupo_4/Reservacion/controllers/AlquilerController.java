@@ -1,5 +1,6 @@
 package com.grupo_4.Reservacion.controllers;
 
+import com.grupo_4.Reservacion.exceptions.AlquilerNotFoundExepcion;
 import com.grupo_4.Reservacion.repositories.AlquilerRepository;
 import com.grupo_4.Reservacion.models.Alquiler;
 import org.springframework.web.bind.annotation.*;
@@ -17,7 +18,7 @@ public class AlquilerController {
     Alquiler getAlquiler(@PathVariable String username) {
         return alquilerRepository.findById(username)
                 .orElseThrow(
-                        () -> new AlquilerNotFoundException("No se encontro una cuenta con el username: " + username));
+                        () -> new AlquilerNotFoundExepcion("No se encontro una cuenta con el username: " + username));
     }
 
     @PostMapping("/cliente")
