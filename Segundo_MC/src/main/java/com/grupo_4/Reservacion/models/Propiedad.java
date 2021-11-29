@@ -9,17 +9,25 @@ public class Propiedad {
     private String descripcion;
     private Integer precio;
     private int IDdueño;
+    private String estado;
 
-    public Propiedad(int id, String direccion, String codigo, String descripcion, Integer precio, int IDdueño) {
+    public Propiedad(int id, String direccion, String codigo, String descripcion, Integer precio, int IDdueño, String estado) {
         this.id = id;
         this.direccion = direccion;
         this.codigo = codigo;
         this.descripcion = descripcion;
         this.precio = precio;
         this.IDdueño = IDdueño;
+        this.estado = estado;
     }
 
+    public String getEstado() {
+        return estado;
+    }
 
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
 
     public void setId(int id) {
         this.id = id;
