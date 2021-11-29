@@ -8,5 +8,7 @@ import java.util.List;
 public interface AlquilerRepository extends MongoRepository <Alquiler, String> {
         List<Alquiler> findByIDPropiedad (String NombrePropiedad);
         List<Alquiler> findByNombreCliente (String nombreCliente);
+        List<Alquiler> findByNombreDueño (String nombreDueño);
+
 
 }

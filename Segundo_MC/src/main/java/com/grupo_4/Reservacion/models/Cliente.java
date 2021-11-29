@@ -9,14 +9,14 @@ public class Cliente {
     private String apellido;
     private Integer cédula;
     private Integer teléfono;
-    private Float dinero_abonado;
+    private Float dinero_actual;
 
-    public Cliente(String nombre,String apellido, Integer cédula, Integer teléfono, Float dinero_abonado) {
+    public Cliente(String nombre,String apellido, Integer cédula, Integer teléfono, Float dinero_actual) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.cédula = cédula;
         this.teléfono = teléfono;
-        this.dinero_abonado = dinero_abonado;
+        this.dinero_actual = dinero_actual;
     }
 
     public String getNombre() {
@@ -47,10 +47,12 @@ public class Cliente {
         this.teléfono = teléfono;
     }
 
-    public Float getDinero_abonado() {
-        return dinero_abonado;
+    public Float getDinero_actual() {
+        return dinero_actual;
     }
-    public void setDinero_abonado(Float dinero_abonado) {
-        this.dinero_abonado = dinero_abonado;
+    public void setDinero_actual(Float dinero_abonado) {
+        this.dinero_actual = dinero_actual;
     }
+
+
 }

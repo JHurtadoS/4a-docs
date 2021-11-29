@@ -7,20 +7,29 @@ public class Alquiler {
     private int id;
     private int NombrePropiedad;
     private String nombreCliente;
+    private String nombreDueño;
+
     private Date llegada;
     private Date salida;
 
-    private String estado;
     private Float dinero_abonado;
 
-    public Alquiler(int id, int idPropiedad, String nombreCliente, Date llegada, Date salida, String estado, Float dinero_abonado) {
+    public Alquiler(int id, int nombrePropiedad, String nombreCliente, String nombreDueño, Date llegada, Date salida, Float dinero_abonado) {
         this.id = id;
-        this.NombrePropiedad = NombrePropiedad;
+        NombrePropiedad = nombrePropiedad;
         this.nombreCliente = nombreCliente;
+        this.nombreDueño = nombreDueño;
         this.llegada = llegada;
         this.salida = salida;
-        this.estado = estado;
         this.dinero_abonado = dinero_abonado;
+    }
+
+    public String getNombreDueño() {
+        return nombreDueño;
+    }
+
+    public void setNombreDueño(String nombreDueño) {
+        this.nombreDueño = nombreDueño;
     }
 
     public int getNombrePropiedad() {
@@ -61,12 +70,7 @@ public class Alquiler {
         this.salida = salida;
     }
 
-    public String getEstado() {
-        return estado;
-    }
-    public void setEstado(String estado) {
-        this.estado = estado;
-    }
+
 
     public Float getDinero_abonado() {
         return dinero_abonado;
