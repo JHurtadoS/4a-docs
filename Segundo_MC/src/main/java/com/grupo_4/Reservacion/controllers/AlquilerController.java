@@ -40,7 +40,7 @@ public class AlquilerController {
                         () -> new AlquilerNotFoundExepcion("No se encontro una cuenta con el username: " + username));
     }
 
-    @PostMapping("/reserva")
+    @PostMapping("/alquiler")
 
     Alquiler newAlquiler(@RequestBody Alquiler alquiler) {
         Cliente cliente = clienteRepository.findByNombre(alquiler.getNombreCliente()).orElse(null);
