@@ -16,7 +16,7 @@ const usersResolver = {
                 tiempoestadia: userInput.tiempoestadia,
                 lastChange: (new Date()).toISOString()
         }
-        await dataSources.accountAPI.createReserva(reservaInput);
+        await dataSources.reservaAPI.createReserva(reservaInput);
     
         const authInput = {
             username: userInput.username,
