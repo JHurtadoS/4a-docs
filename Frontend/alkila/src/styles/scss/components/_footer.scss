@@ -1,0 +1,48 @@
+footer {
+    background-color: #3366ff;
+    .secciones {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+        .sec {
+            align-content: center;
+            place-self: center;
+            .tit-footer {
+                text-align: center;
+                width: 100%;
+                font-size: 24px;
+                font-weight: 700;
+            }
+            .links {
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .copyright {
+        display: flex;
+        align-items: center;
+        .alkila-logo {
+            margin-right: 2em;
+            display: flex;
+            .icono-casa {
+                background-color: white;
+                padding: 6.5px;
+                width: 23px;
+                height: 23px;
+                margin-top: 20px;
+                margin-right: 2px;
+                clip-path: circle(50% at 50% 50%);
+                img {
+                    width: inherit;
+                }
+            }
+        }
+        .derreser {
+            p {
+                font-weight: 700;
+            }
+        }
+    }
+}
