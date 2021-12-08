@@ -1,23 +1,31 @@
-p,a,span,h1,h2,h3,h4,input{
+p,
+a,
+span,
+h1,
+h2,
+h3,
+h4,
+input {
     font-family: 'Tw Cen MT';
 }
-p{
+
+p {
     font-weight: 300;
     font-size: 16px;
 }
 
-
+body {
+    margin: 0 0;
+}
 
 a {
     text-decoration: none;
 }
 
-.contenedor{
+.contenedor {
     width: 95%;
     margin: 0 auto;
 }
-
-
 
 p,
 a,
