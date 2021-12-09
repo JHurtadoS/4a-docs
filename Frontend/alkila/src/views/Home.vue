@@ -1,18 +1,36 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <navbar />
+
+    <main>
+      <div class="contenedor-mainpage contenedor">
+        <div class="contenido-mainpage">
+          <h2>Encuentra tu lugar ideal</h2>
+          <p>
+            lorem ipsum Lorem lorem ipsum Loremlorem ipsum Lorem lorem ipsum
+            Lorem vlorem ipsum Lorem lorem ipsum Lorem lorem ipsum Loremlorem
+            ipsum Lorem lorem ipsum Loremlorem ipsum Loremlorem ipsum Loremv
+          </p>
+          <input type="search" name="" id="" placeholder="Encuentralo Ya" />
+        </div>
+      </div>
+    </main>
+    <Footer />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import Footer from "../components/footer.vue";
+import navbar from "../components/navbar.vue";
 
 export default {
   name: "Home",
   components: {
-    HelloWorld,
+    Footer,
+    navbar,
   },
 };
 </script>
+
+<style lang="scss" src="../styles/scss/app.scss"></style>
