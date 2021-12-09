@@ -12,17 +12,21 @@ footer {
                 width: 100%;
                 font-size: 24px;
                 font-weight: 700;
+                color: white;
             }
             .links {
                 p {
+                    color: white;
                     text-align: center;
                 }
             }
         }
     }
     .copyright {
+        margin-top: 1em;
         display: flex;
         align-items: center;
+        justify-content: center;
         .alkila-logo {
             margin-right: 2em;
             display: flex;
@@ -34,15 +38,23 @@ footer {
                 margin-top: 20px;
                 margin-right: 2px;
                 clip-path: circle(50% at 50% 50%);
-                img {
-                    width: inherit;
-                }
+                font-size: 20px;
+            }
+            h1 {
+                color: white;
             }
         }
         .derreser {
             p {
+                color: white;
                 font-weight: 700;
             }
         }
     }
+}
+
+svg.svg-inline--fa.fa-house-user.fa-w-18.fa-fw.fa-2x {
+    margin-top: 2.5px;
+    /* margin-right: 12px; */
+    margin-left: -1px;
 }

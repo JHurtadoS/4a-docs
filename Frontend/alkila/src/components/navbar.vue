@@ -3,20 +3,20 @@
     <div class="contenedor-nav contenedor">
       <div class="alkila-logo">
         <div class="icono-casa">
-          <img src="../assets/logo.png" alt="" srcset="" />
+          <font-awesome-icon icon="house-user" fixed-width size="2x" />
         </div>
         <h1>Alkila</h1>
       </div>
 
       <div class="enlaces">
         <div class="links">
-          <router-link to="/Sinup">SingUp</router-link> |
+          <router-link to="/Sinup">SingUp</router-link>
           <router-link to="/Login">Login</router-link>
           <router-link to="/">Home</router-link>
         </div>
 
         <div class="profile">
-          <img src="../assets/logo.png" alt="" srcset="" />
+          <font-awesome-icon icon="user" fixed-width size="1x" />
         </div>
       </div>
     </div>

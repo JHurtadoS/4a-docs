@@ -1,6 +1,20 @@
 <template>
   <div class="home">
     <navbar />
+
+    <main>
+      <div class="contenedor-mainpage contenedor">
+        <div class="contenido-mainpage">
+          <h2>Encuentra tu lugar ideal</h2>
+          <p>
+            lorem ipsum Lorem lorem ipsum Loremlorem ipsum Lorem lorem ipsum
+            Lorem vlorem ipsum Lorem lorem ipsum Lorem lorem ipsum Loremlorem
+            ipsum Lorem lorem ipsum Loremlorem ipsum Loremlorem ipsum Loremv
+          </p>
+          <input type="search" name="" id="" placeholder="Encuentralo Ya" />
+        </div>
+      </div>
+    </main>
     <Footer />
   </div>
 </template>

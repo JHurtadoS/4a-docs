@@ -1,15 +1,21 @@
 /* eslint-disable prettier/prettier */
 import { createApp } from "vue";
-import Vue from "vue";
 import App from "./App.vue";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faUserSecret } from "@fortawesome/free-solid-svg-icons";
+
+import { faHouseUser } from "@fortawesome/free-solid-svg-icons";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-library.add(faUserSecret);
-Vue.component("font-awesome-icon", FontAwesomeIcon);
+library.add(faHouseUser);
+library.add(faUser);
 
+/*
+
+Vue.component("font-awesome-icon", FontAwesomeIcon);
+*/
 import router from "./router";
 import {
     ApolloClient,
@@ -37,4 +43,8 @@ const apolloClient = new ApolloClient({
 const apolloProvider = new createApolloProvider({
     defaultClient: apolloClient,
 });
-createApp(App).use(router).use(apolloProvider).mount("#app");
+createApp(App)
+    .component("font-awesome-icon", FontAwesomeIcon)
+    .use(router)
+    .use(apolloProvider)
+    .mount("#app");

@@ -33,7 +33,7 @@
       <div class="copyright">
         <div class="alkila-logo">
           <div class="icono-casa">
-            <img src="../assets/logo.png" alt="" srcset="" />
+            <font-awesome-icon icon="house-user" />
           </div>
           <h1>Alkila</h1>
         </div>
