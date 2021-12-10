@@ -1,0 +1,47 @@
+.clases-disponibles {
+    background-image: url('~@/assets/—Pngtree—business pure white background_359687.jpg');
+    background-position: center center;
+    background-size: cover;
+    .contenedor-casas-disponibles {
+        padding-bottom: 4em;
+    }
+    .contenedor-grid {
+        padding-top: 7em;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        @include tablet {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include telefono {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        column-gap: 15px;
+        row-gap: 30px;
+        .contenedor-casa {
+            background-color: #f3f3f3;
+            box-shadow: 0px 6px 13px -7px #000000, 5px 5px 15px 5px rgba(51, 51, 51, 0);
+            //box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+            padding-bottom: 10px;
+            @include telefono {
+                margin: 0 40px;
+                margin-bottom: 20px;
+                &:last-of-type {
+                    margin-bottom: 0px;
+                }
+            }
+            // border-style: solid;
+            //border-width: 1px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            .img-casa {
+                width: 100%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

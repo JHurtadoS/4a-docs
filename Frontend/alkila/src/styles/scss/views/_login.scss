@@ -1,0 +1,92 @@
+.login {
+    height: 100vh;
+    background-image: url('~@/assets/house-g08a2befdf_1280.jpg');
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 3em;
+    .contenedor-login {
+        position: absolute;
+        height: 500px;
+        width: 400px;
+        background-color: $azul;
+        opacity: 50%;
+        top: 15%;
+        right: 3%;
+    }
+    .contenedor-grid {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        @include login-form {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .contenedor-form-login {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        margin: 0 auto;
+        margin-top: 60px;
+        padding: 3em 1em 3em 1em;
+        background-color: rgba($azul, .6);
+        h2 {
+            font-size: 35px;
+            margin: 0 0;
+            color: white;
+        }
+        .campos {
+            display: flex;
+            flex-direction: column;
+            margin: 2em 0;
+            .campo {
+                margin-bottom: 1.3em;
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+                label {
+                    margin-right: 15px;
+                    color: white;
+                }
+                input {
+                    width: 300px;
+                    height: 23px;
+                    font-weight: 700;
+                }
+            }
+        }
+        .links-recuperacion {
+            display: flex;
+            justify-content: space-between;
+        }
+        .btn-submit {
+            width: 70%;
+            margin: 0 auto;
+            margin-top: 50px;
+            input[type=button],
+            input[type=submit] {
+                width: 90%;
+                font-size: 22px;
+                font-weight: 700;
+                background-color: rgb(24, 53, 105);
+                color: white;
+                padding: 10px 14px;
+                border: none;
+                border-radius: 5px;
+                box-shadow: none;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.links-recuperacion {
+    a {
+        color: white;
+        &:hover {
+            transition: 0.3s;
+            color: rgb(24, 53, 105);
+        }
+    }
+}

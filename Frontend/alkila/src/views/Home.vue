@@ -2,7 +2,7 @@
   <div class="home">
     <navbar />
 
-    <main>
+    <main class="mainpage">
       <div class="contenedor-mainpage contenedor">
         <div class="contenido-mainpage">
           <h2>Encuentra tu lugar ideal</h2>

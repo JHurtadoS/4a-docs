@@ -1,5 +1,9 @@
 @import './util/global';
 @import './util/variables';
+@import './util/mixins';
 @import './components/navbar';
 @import './components/footer';
 @import './views/mainpage';
+@import './views/login';
+@import './views/CasasDisponibles';
+@import './views/casaView';

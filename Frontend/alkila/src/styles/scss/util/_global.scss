@@ -35,7 +35,10 @@ h1,
 h2,
 h3,
 input,
-h4 {
+h4,
+input[type=button],
+input[type=submit],
+input[type=text] {
     font-family: 'Tw Cen MT';
     color: #333333;
 }

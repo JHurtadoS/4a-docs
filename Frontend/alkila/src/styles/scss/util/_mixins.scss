@@ -1,0 +1,29 @@
+@mixin telefono {
+    @media (max-width: 500px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: 870px) {
+        @content;
+    }
+}
+
+@mixin casa-info {
+    @media (min-width: 990px) {
+        @content;
+    }
+}
+
+@mixin desc-info {
+    @media (min-width: 1000px) {
+        @content;
+    }
+}
+
+@mixin login-form {
+    @media (max-width: 890px) {
+        @content;
+    }
+}

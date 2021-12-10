@@ -1,0 +1,104 @@
+.casa-page {
+    margin: 4em 0;
+    .contenedor-casa-page {
+        .imagen-casa-page {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            @include casa-info {
+                align-items: center;
+            }
+            justify-content: flex-end;
+            img {
+                width: 100%;
+                max-width: 950px;
+            }
+        }
+        .img-casa {
+            position: relative;
+            margin: 0 auto;
+        }
+        .info-casa {
+            position: absolute;
+            display: grid;
+            grid-template-rows: repeat(5, 1fr);
+            height: inherit;
+            @include casa-info {
+                padding: 10px 0;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                max-width: 950px;
+                height: fit-content;
+            }
+            background-color: rgba( #FFFFFF, 0.4);
+            .info-item {
+                width: 50%;
+                align-self: center;
+                @include casa-info {
+                    width: 100%;
+                }
+                display: flex;
+                flex-direction: column;
+                margin-right: 15px;
+                &:last-of-type {
+                    margin-right: 0px;
+                }
+            }
+            span {
+                text-align: left;
+                margin-left: 5px;
+                @include casa-info {
+                    text-align: center;
+                }
+                color: white;
+                font-size: 20px;
+            }
+            .social-media {
+                display: flex;
+                margin: 0 20px 0 5px;
+                &:last-of-type {
+                    margin-right: 20;
+                }
+                .btn {
+                    display: flex;
+                    width: 100px;
+                    padding: 10px;
+                    height: 40px;
+                    align-items: center;
+                    background-color: rgb(24, 53, 105);
+                    color: #FFFFFF;
+                    span {
+                        max-width: 70px;
+                        font-size: 14px;
+                    }
+                    margin-right: 10px;
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        .desc-ampli {
+            margin: 0 auto;
+            text-align: justify;
+            width: 100%;
+            max-width: 950px;
+        }
+        .btn-reserva {
+            background-color: rgb(24, 53, 105);
+            max-width: 350px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover {
+                cursor: pointer;
+            }
+            a {
+                color: white;
+                padding: 15px 150px;
+            }
+        }
+    }
+}

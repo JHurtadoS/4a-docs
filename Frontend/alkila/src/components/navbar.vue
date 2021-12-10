@@ -10,7 +10,7 @@
 
       <div class="enlaces">
         <div class="links">
-          <router-link to="/Sinup">SingUp</router-link>
+          <router-link to="/Singup">SingUp</router-link>
           <router-link to="/Login">Login</router-link>
           <router-link to="/">Home</router-link>
         </div>
