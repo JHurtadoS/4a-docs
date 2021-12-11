@@ -28,13 +28,7 @@ export default {
   },
 
   methods: {
-    loadLogIn: function () {
-      this.$router.push({ name: "logIn" });
-    },
 
-    loadSignUp: function () {
-      this.$router.push({ name: "signUp" });
-    },
 
     completedLogIn: function (data) {
       localStorage.setItem("username", data.username);
@@ -61,11 +55,12 @@ export default {
       this.$router.push({ name: "transaction" });
     },
 
-    logOut: function () {
-      localStorage.clear();
-      alert("Sesión Cerrada");
-      this.loadLogIn();
-    },
+
+
+  created: function(){
+    this.verifyAuth()
+  },
+
   },
 };
 </script>

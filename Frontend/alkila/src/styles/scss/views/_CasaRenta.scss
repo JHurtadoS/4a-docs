@@ -1,0 +1,59 @@
+.reserva-casa {
+    height: 100vh;
+    background-image: url('~@/assets/abstract-blue-and-white-geometric-background-free-vector.jpg');
+    background-size: cover;
+    background-position: center center;
+    .contenedor-reserva-casa {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100%;
+        .form-container {
+            h2 {
+                color: white;
+                font-size: 35px;
+                text-align: center;
+                margin-bottom: 35px;
+            }
+            padding: 2em 4em;
+            border-radius: 20px;
+            background-color: $azul;
+            .campo {
+                display: flex;
+                align-items: center;
+                margin: 15px 0;
+                label {
+                    font-size: 22px;
+                    color: rgb(24, 53, 105);
+                    margin-right: 20px;
+                    font-weight: 700;
+                }
+                input {
+                    height: 30px;
+                    width: 100%;
+                    min-width: 280px;
+                }
+            }
+            .btn-submit {
+                width: 100%;
+                display: flex;
+                margin-top: 30px;
+                input[type=submit] {
+                    transition: ease-in-out 0.5s;
+                    &:hover {
+                        cursor: pointer;
+                        box-shadow: -1px 1px 4px 0px rgba(0, 0, 0, 0.75);
+                    }
+                    width: 200px;
+                    padding: 1em 2em;
+                    background-color: rgb(24,
+                    53,
+                    105);
+                    margin: 0 auto;
+                    color: white;
+                    border: none;
+                }
+            }
+        }
+    }
+}

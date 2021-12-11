@@ -10,9 +10,17 @@
 
       <div class="enlaces">
         <div class="links">
-          <router-link to="/Singup">SingUp</router-link>
-          <router-link to="/Login">Login</router-link>
-          <router-link to="/">Home</router-link>
+          <router-link v-if="!is_auth" to="/Singup">SingUp</router-link>
+          <router-link v-if="!is_auth" to="/Login">Login</router-link>
+          <router-link v-if="is_auth" v-on:click="logOut" to="/"
+            >Cerrar Sesion</router-link
+          >
+          <router-link
+            v-if="is_auth"
+            v-on:click="LoadPropiedades"
+            to="/propiedades"
+            >Propiedades</router-link
+          >
         </div>
 
         <div class="profile">
@@ -28,7 +36,26 @@
 <script>
 export default {
   name: "navbar",
-  computed: {},
+  computed: {
+    is_auth: {
+      get: function () {
+        return this.$route.meta.requieresAuth;
+      },
+      set: function () {},
+    },
+  },
+
+  methods: {
+    LoadPropiedades: function () {
+      this.$router.push({ name: "propiedades" });
+    },
+
+    logOut: function () {
+      localStorage.clear();
+      alert("Sesión Cerrada");
+      this.verifyAuth();
+    },
+  },
 };
 </script>
 
