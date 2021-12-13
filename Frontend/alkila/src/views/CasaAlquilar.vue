@@ -1,6 +1,5 @@
 /* eslint-disable prettier/prettier */
 <template>
-  <navbar />
   <main class="casa-page">
     <div class="contenedor-casa-page contenedor">
       <div class="imagen-casa-page">
@@ -48,9 +47,8 @@
       </div>
 
       <div class="btn btn-reserva">
-        <router-link to="/Reserva">Reserva</router-link>
+        <router-link to="/ReservaCasa">Reserva</router-link>
       </div>
-
     </div>
   </main>
   <Footer />
@@ -58,13 +56,13 @@
 
 <script>
 import Footer from "../components/footer.vue";
-import navbar from "../components/navbar.vue";
+//import navbar from "../components/navbar.vue";
 
 export default {
   name: "propiedad",
   components: {
     Footer,
-    navbar,
+    //navbar,
   },
 };
 </script>

@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 <template>
-  <navbar />
+ 
   <main class="clases-disponibles">
     <div class="contenedor-casas-disponibles contenedor">
       <div class="contenedor-grid">
@@ -136,13 +136,13 @@
 
 <script>
 import Footer from "../components/footer.vue";
-import navbar from "../components/navbar.vue";
+//import navbar from "../components/navbar.vue";
 
 export default {
   name: "Propiedades",
   components: {
     Footer,
-    navbar,
+    //navbar,
   },
 };
 </script>

@@ -1,5 +1,6 @@
+/* eslint-disable prettier/prettier */ /* eslint-disable prettier/prettier */
 <template>
-  <navbar />
+  
   <main class="login">
     <div class="contenedor-grid contenedor">
       <div class="contenedor-vacio"></div>
@@ -42,13 +43,16 @@
 <script>
 // @ is an alias to /src
 import Footer from "../components/footer.vue";
-import navbar from "../components/navbar.vue";
+//import navbar from "../components/navbar.vue";
+
+import gql from "graphql-tag";
 
 export default {
-  name: "Login",
+  name: "LogIn",
+
   components: {
     Footer,
-    navbar,
+    //navbar,
   },
   data: function () {
     return {
@@ -85,12 +89,11 @@ export default {
           this.$emit("completedLogIn", dataLogIn);
         })
         .catch((error) => {
-          alert("ERROR 401: Credenciales Incorrectas.");
+          alert("ERROR 401: Credenciales Incorrectas." + error);
         });
     },
   },
 };
 </script>
-
 
 <style lang="scss" src="../styles/scss/app.scss"></style>

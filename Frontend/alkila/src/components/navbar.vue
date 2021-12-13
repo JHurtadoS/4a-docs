@@ -1,12 +1,15 @@
+/* eslint-disable prettier/prettier */
 <template>
   <nav>
     <div class="contenedor-nav contenedor">
-      <div class="alkila-logo">
-        <div class="icono-casa">
-          <font-awesome-icon icon="house-user" fixed-width size="2x" />
+      <router-link to="/propiedades">
+        <div class="alkila-logo">
+          <div class="icono-casa">
+            <font-awesome-icon icon="house-user" fixed-width size="2x" />
+          </div>
+          <h1>Alkila</h1>
         </div>
-        <h1>Alkila</h1>
-      </div>
+      </router-link>
 
       <div class="enlaces">
         <div class="links">
@@ -22,40 +25,19 @@
             >Propiedades</router-link
           >
         </div>
-
-        <div class="profile">
-          <font-awesome-icon icon="user" fixed-width size="1x" />
-        </div>
+        <router-link to="/reserva">
+          <div class="profile">
+            <font-awesome-icon icon="user" fixed-width size="1x" />
+          </div>
+        </router-link>
       </div>
     </div>
   </nav>
 </template>
 
-
-
 <script>
 export default {
   name: "navbar",
-  computed: {
-    is_auth: {
-      get: function () {
-        return this.$route.meta.requieresAuth;
-      },
-      set: function () {},
-    },
-  },
-
-  methods: {
-    LoadPropiedades: function () {
-      this.$router.push({ name: "propiedades" });
-    },
-
-    logOut: function () {
-      localStorage.clear();
-      alert("Sesión Cerrada");
-      this.verifyAuth();
-    },
-  },
 };
 </script>
 

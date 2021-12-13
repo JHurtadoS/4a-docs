@@ -1,7 +1,5 @@
 <template>
   <div class="home">
-    <navbar />
-
     <main class="mainpage">
       <div class="contenedor-mainpage contenedor">
         <div class="contenido-mainpage">
@@ -22,13 +20,13 @@
 <script>
 // @ is an alias to /src
 import Footer from "../components/footer.vue";
-import navbar from "../components/navbar.vue";
+//import navbar from "../components/navbar.vue";
 
 export default {
   name: "Home",
   components: {
     Footer,
-    navbar,
+    //navbar,
   },
 };
 </script>

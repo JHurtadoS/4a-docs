@@ -1,5 +1,5 @@
 <template>
-  <navbar />
+  
   <main class="reserva-casa">
     <div class="contenedor-reserva-casa contenedor">
       <div class="form-container">
@@ -33,14 +33,14 @@
 </template>
 
 <script>
-import navbar from "../components/navbar.vue";
+//import navbar from "../components/navbar.vue";
 import Footer from "../components/footer.vue";
 
 export default {
   name: "ReservaCasa",
   components: {
     Footer,
-    navbar,
+    //navbar,
   },
 };
 </script>
